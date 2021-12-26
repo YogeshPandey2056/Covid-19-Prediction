@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+    <link rel="stylesheet" href="{{ url_for('static',filename='index.css' ) }}">
+    <title>COVID-PREDICTON</title>
+    </head>
+    <body onload="start(0)">
+    <h1>COVID-19 Prediction</h1>
+    <div id="wrap">
+        
+            <h2>Contact Your Facility’s Care Team
+</h2>
+            <font color="white"><p>Based on your answers, you should discuss your symptoms with the doctor or care team in charge at your facility.
+
+</p></font>
+            <font color="white">Help stop the spread of COVID‑19. When outside the home, stay at least six feet away from other people and avoid groups.
+            <h3>Your Next Steps</h3></font>
+            <ol type="1">
+               <font color="white"> <li>Protect Yourself & Others</li>
+           <p> You should limit your contact with others including those in your home. If you can, have a room and bathroom that’s just for you..</P>
+
+<p>You should stay away from others for at least 7 days from when your symptoms first appeared. Your isolation can end if your symptoms improve significantly and if you have had no fever for at least 72 hours without the use of medicine.
+</p>
+
+<p>This can be hard when you’re not feeling well, but it will protect those around you.</p>
+    <li>Rest and Take Care</li>
+    <p>You should eat well, drink fluids, and get plenty of rest.</p>
+    <li>Testing Will be Determined by Facility</li>
+    <P>You should get in touch with the care team at your facility to determine whether you should get tested for COVID‑19.</P></font><br><br><br><br>
+    <table border=1>
+        <tr>
+            <th style="color:white"> Your Symptoms </th>
+            <th style="color:white"> Condition</th>
+        </tr>
+        {%for indi in combo%}
+        <tr>
+            <td style="color:white">{{indi[0]}}</td>
+            <td style="color:white">{{indi[1]}}</td>
+        </tr>
+        {%endfor%}
+    </table>
+    <br><br>
+    <a href="{{url_for('home')}}"><button id="button3">Finish</button></a>
+        
+    </div>
+    </div>
+    </body>
+</html>

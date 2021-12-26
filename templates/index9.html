@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+    <link rel="stylesheet" href="{{ url_for('static',filename='index.css' ) }}">
+        <title>COVID-PREDICTON</title>
+    </head>
+    <body onload="start(0)">
+    <h1>COVID-19 Prediction</h1>
+    <div id="wrap">
+
+            <h2>You Should Practice Physical Distancing
+</h2>
+            <font color="white"><p>No Test Needed At This Time
+As of now, your answers suggest you do not need to get tested for COVID‑19. If anything changes, take the questionnaire again</p></font>
+            <font color="white">Help stop the spread of COVID‑19. When outside the home, stay at least six feet away from other people and avoid groups.
+            <h3>Your Next Steps</h3></font>
+            <ol type="1">
+               <font color="white"> <li>Protect Yourself & Others</li>
+           <p> You should avoid groups of people and stay six feet apart from anyone who’s not part of the household. Especially avoid those showing symptoms.</P>
+
+<p>These small but important steps can slow the spread of COVID‑19.</p>
+
+<p>This can be hard when you’re not feeling well, but it will protect those around you.</p>
+    <li>Take Care and Prepare</li>
+    <p>You should eat well, exercise regularly, and get plenty of sleep. You should also stay connected with friends and family.</p>
+    <!--<li>Monitor Symptoms</li>-->
+    <P>If you’re currently taking prescription medication, contact your doctor’s office about getting a 30-day supply.</P></font><br><br><br><br>
+    <table border=1>
+        <tr>
+            <th style="color:white">Your Symptoms </th>
+            <th style="color:white">Your Condition</th>
+        </tr>
+        {%for indi in combo%}
+        <tr>
+            <td style="color:white">{{indi[0]}}</td>
+            <td style="color:white">{{indi[1]}}</td>
+        </tr>
+        {%endfor%}
+    </table>
+    <br><br>
+    
+    <a href="{{url_for('home')}}"><button id="button3">Finish</button></a>
+</div>
+
+    </div>
+    
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+	    <link rel="stylesheet" href="{{ url_for('static',filename='index2.css' ) }}">
+    </head>
+        <title>COVID-19 Prediction</title>
+        <body onload="start(0)">
+            <center><h1>COVID-19 Prediction</h1></center>
+            <div id="wrapper">
+                <h2>COVID-19 Screening Tool</h2>
+                    <p style="color:white;font-size: 18px;">This tool can help you understand what to do next about COVID-19.
+
+                    Let’s all look out for each other by knowing our status, trying not to infect others, and reserving care for those in need.</p><br><br>
+                    <h3>In which age group do you belong?</h3>
+                    <font color="white">
+                   <input type="checkbox" class="container" name="ques" value="1" id="op1">0-15<br>
+                    <input type="checkbox" class="container" name="ques" value="2" id="op2">15-25<br>
+                    <input type="checkbox" class="container" name="ques" value="3" id="op3">25-50<br>
+                    <input type="checkbox" class="container" name="ques" value="4" id="op4">50+<br></font>
+                <center><button id="add" onclick="add()"><a href="{{url_for('home')}}">START SCREENING</a></button></center>
+            </div>
+        </body>
+    
+</html>

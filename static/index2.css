@@ -1,0 +1,51 @@
+body
+{
+ background-image:url(corona2.jpg);
+ background-attachment: fixed;
+}
+h1
+{
+ align-content: center;
+ border-bottom-style:hidden;
+ color: green;
+ text-shadow: 2px 2px #ff9999;
+ font-family: fantasy;
+ font-size: 40px;
+}
+h3{
+	color: white;
+    font-size: 30px;
+
+}
+
+#wrapper
+{
+	width: 450px;
+	background-color: #262842;
+	margin-top: 100px;
+	margin-left: 370px;
+	padding-bottom: 100px;
+	padding-left: 150px;
+	padding-top: 310px;
+	padding-right: 165px;
+	border-radius: 25px;
+
+
+}
+h2{
+    color: #050505;
+    margin-top: -180px;
+    font-size: 30px;
+    font-family:serif;
+    text-shadow: 2px 2px #e7e8e1;
+}
+#add
+{
+    margin-top: 20px;
+    align-items: center;
+}
+#add:hover {
+  -ms-transform: scale(1.5); 
+  -webkit-transform: scale(1.5); 
+  transform: scale(1.5); 
+}

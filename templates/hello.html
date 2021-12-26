@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="{{ url_for('static',filename='hello (1).css' ) }}">  
+</head>
+
+<body onload="start(0)">
+  <center><h1>COVID-19 Prediction</h1></center>
+  <div class="dropdown">
+  <button class="dropbtn"><a  href="https://www.worldometers.info/coronavirus/">Worldometer</button>
+</div>
+<div class="dropdown">
+  <button class="dropbtn">For Emergency</button>
+  <div class="dropdown-content">
+  <a href="#">+91-11-23978046</a>
+  <a href="#">102</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn">Doctor's Contact</button>
+  <div class="dropdown-content">
+  <a href="https://www.plexusmd.com/md/profile/public?pfid=11111492&uaid=11111507">Dr.Anant Patil</a>
+  <a href="https://www.lybrate.com/agra/doctor/dr-apoorva-jain-nephrologist">Dr.Apoorva Jain </a>
+  <a href="http://www.bhartihospital.com/">Dr. Sanjay Kalra</a>
+  </div>
+</div>
+
+  <div class="form">
+    <font color="#0060B6"><h2>#Note:</h2>
+    <marquee direction="left" scrollamount=10px><h3>If you don't mark any options given below it will be considered that you don't have any of the symptoms given below.</h3></font> </marquee>
+    <div id="question"></div>
+    <h3 style="color:white;">Check if you have any of the given symptoms</h3>
+    <div id="options">
+    <form action=# method="POST">
+    <p style="color:white;">
+     <input type="checkbox" class="container" name="ques" value="1" id="op1">fever<br>
+      <input type="checkbox" class="container" name="ques" value="2" id="op2">dry cough<br>
+      <input type="checkbox" class="container" name="ques" value="3" id="op3">tiredness<br>
+      <input type="checkbox" class="container" name="ques" value="4" id="op4">aches<br>
+      <input type="checkbox" class="container" name="ques" value="5" id="op5">pains<br>
+      <input type="checkbox" class="container" name="ques" value="6" id="op6">sore throat<br>
+      <input type="checkbox" class="container" name="ques" value="7" id="op7">diarrhoea<br>
+      <input type="checkbox" class="container" name="ques" value="8" id="op8">conjuctivits<br>
+      <input type="checkbox" class="container" name="ques" value="9" id="op9">headache<br>
+      <input type="checkbox" class="container" name="ques" value="10" id="op10">loss of taste or smell<br>
+      <input type="checkbox" class="container" name="ques" value="11" id="op11">rash on skin<br>
+      <input type="checkbox" class="container" name="ques" value="12" id="op12">dicolouration of fingers or toes<br>
+      <input type="checkbox" class="container" name="ques" value="13" id="op13">difficulty in breathing<br>
+      <input type="checkbox" class="container" name="ques" value="14" id="op14">chest pain<br>
+      <input type="checkbox" class="container" name="ques" value="15" id="op15">loss of speech or movement<br><br></p>
+      <button id="add">Submit</button>
+    </form>
+    </div>
+    
+    
+  </div>
+ <!--<script src="{{ url_for('static',filename='hello (1).js') }}"></script>-->
+</body>
+
+</html>
+
+
+<!--
+  ['fever', 'dry_cough', 'tiredness', 'aches', 'pains', 'sore_throat',
+       'diarrhoea', 'conjuctivits', 'headache', 'loss_of_taste_or_smell',
+       'rash_on_skin', 'dicolouration_of_fingers_or_toes',
+       'difficulty_in_breathing', 'chest_pain', 'loss_of_speech_or_movement'
+-->
